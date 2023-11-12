@@ -1,2 +1,10 @@
 # RecSys2_catboost_BERT
-Content recommendation system on CatBoostClassifier. Text data replaced with BERT-based embeddings.
+Content recommendation system on CatBoostClassifier. Text data replaced with BERT-based embeddings.  
+
+Контентная рекомендательная система на основе CatBoostClassifier.  
+Текстовые признаки преобразованы в эмбеддинги (векторное представление) с помощью предобученной модели с портала Hugging Face - модели BERT (bert-base-cased).  
+
+Файл recsys2_catboost_BERT_model_train.ipynb предназначен для создания набора признаков, тренировки на них модели и проверки работоспособности модели с выводом метрик. Файл содержит только финальный результат выбора признаков для обучения и параметров модели. Эксперименты с подбором и тестированием признаков, подбор параметров модели с использованием GreedSearchCV не вошли в данный файл.  
+Файл app_8e5fds_BERT_7_300pst - это файл приложения FastAPI для выдачи рекомендаций постов по введенному id пользователя.  
+Файл schema.py содержит схемы данных, которые используются в app_8e5fds_BERT_7_300pst.py.  
+Файл model_catboost_BERT - это файл обученной модели.
